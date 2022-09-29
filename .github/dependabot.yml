@@ -10,6 +10,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+# customized schedule for version updates     
+      time: "02:00"
 # Allow up to 10 open pull requests for pip dependencies
     open-pull-requests-limit: 5
     commit-message:
@@ -22,8 +24,6 @@ updates:
      # - dependency-name: "lodash"
       # Allow updates for React and any packages starting "react"
       - dependency-name: "react*"
-# customized schedule for version updates     
-      time: "02:00"
 # Raise all npm pull requests with reviewers
   #  reviewers:
       - "my-org/team-name"
