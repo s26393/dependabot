@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/dependabot/clientlibs"/>
+    <filter root="/apps/dependabot/components"/>
+    <filter root="/apps/dependabot/i18n"/>
+</workspaceFilter>
