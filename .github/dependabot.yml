@@ -10,27 +10,26 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-# customized schedule for version updates     
+# customized schedule for version updates
       time: "02:00"
-# Allow up to 10 open pull requests for pip dependencies
-    open-pull-requests-limit: 5
+# Allow up to 5 open pull requests for npm dependencies (default is 5 )
+    open-pull-requests-limit: 10
     commit-message:
-      # Prefix all commit messages with "npm"
+# Prefix all commit messages with "npm"
       prefix: "npm"
-
 # Use `allow` to specify which dependencies to maintain
     allow:
-      # Allow updates for Lodash
-     # - dependency-name: "lodash"
-      # Allow updates for React and any packages starting "react"
+# Allow updates for Lodash
+# - dependency-name: "lodash"
+# Allow updates for React and any packages starting "react"
        - dependency-name: "react*"
 # Raise all npm pull requests with reviewers
-  #  reviewers:
-   #   - "my-org/team-name"
-   #   - "octocat"
+#   reviewers:
+#     - "my-org/team-name"
+#     - "octocat"
 # Raise all npm pull requests with an assignee
- #   assignees:
-  #    - "user-name"
+#   assignees:
+#     - "user-name"
 # For Lodash, ignore all updates
     ignore:
       - dependency-name: "lodash"      
@@ -46,11 +45,11 @@ updates:
  #   directory: "/"
  #   schedule:
  #     interval: "daily" #(weekly/monthly)
-    # Raise pull requests for Docker version updates
+ # Raise pull requests for Docker version updates
     # against the "develop" branch. The Docker configuration
     # no longer affects security update pull requests.
     #target-branch: "develop"
-   #  Use custom labels on pull requests for Docker version updates
+#  Use custom labels on pull requests for Docker version updates
     # labels:
   #   - "Docker dependencies"
    #   - "triage-board"
