@@ -23,14 +23,14 @@ updates:
       # Allow updates for Lodash
      # - dependency-name: "lodash"
       # Allow updates for React and any packages starting "react"
-      - dependency-name: "react*"
+       - dependency-name: "react*"
 # Raise all npm pull requests with reviewers
   #  reviewers:
-      - "my-org/team-name"
-      - "octocat"
+   #   - "my-org/team-name"
+   #   - "octocat"
 # Raise all npm pull requests with an assignee
  #   assignees:
-      - "user-name"
+  #    - "user-name"
 # For Lodash, ignore all updates
     ignore:
       - dependency-name: "lodash"      
@@ -49,8 +49,8 @@ updates:
     # Raise pull requests for Docker version updates
     # against the "develop" branch. The Docker configuration
     # no longer affects security update pull requests.
- #   target-branch: "develop"
-    # Use custom labels on pull requests for Docker version updates
- #    labels:
- #     - "Docker dependencies"
- #     - "triage-board"
+    #target-branch: "develop"
+   #  Use custom labels on pull requests for Docker version updates
+    # labels:
+  #   - "Docker dependencies"
+   #   - "triage-board"
