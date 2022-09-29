@@ -5,7 +5,52 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+# Keep npm dependencies up to date
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+# Allow up to 10 open pull requests for pip dependencies
+    open-pull-requests-limit: 5
+    commit-message:
+      # Prefix all commit messages with "npm"
+      prefix: "npm"
+
+# Use `allow` to specify which dependencies to maintain
+    allow:
+      # Allow updates for Lodash
+     # - dependency-name: "lodash"
+      # Allow updates for React and any packages starting "react"
+      - dependency-name: "react*"
+# customized schedule for version updates     
+      time: "02:00"
+# Raise all npm pull requests with reviewers
+  #  reviewers:
+      - "my-org/team-name"
+      - "octocat"
+# Raise all npm pull requests with an assignee
+ #   assignees:
+      - "user-name"
+# For Lodash, ignore all updates
+    ignore:
+      - dependency-name: "lodash"      
+# For disabling version updates for npm dependencies
+  ##  open-pull-requests-limit: 0
+    # Raise all npm pull requests with custom labels
+    labels:
+      - "npm dependencies"
+      - "triage-board"
+
+ # Keep Docker dependencies up to date
+ # - package-ecosystem: "docker"
+ #   directory: "/"
+ #   schedule:
+ #     interval: "daily" #(weekly/monthly)
+    # Raise pull requests for Docker version updates
+    # against the "develop" branch. The Docker configuration
+    # no longer affects security update pull requests.
+ #   target-branch: "develop"
+    # Use custom labels on pull requests for Docker version updates
+ #    labels:
+ #     - "Docker dependencies"
+ #     - "triage-board"
