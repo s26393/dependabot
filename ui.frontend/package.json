@@ -19,7 +19,7 @@
     "sanitize-html": "^2.3.3",
     "history": "^4.10.1",
     "react": "^16.12.0",
-    "react-app-polyfill": "^1.0.5",
+    "react-app-polyfill": "^3.0.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^6.4.1",
     "react-universal-component": "^4.5.0"
