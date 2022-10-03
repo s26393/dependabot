@@ -32,7 +32,7 @@ updates:
        - dependency-name: "react*"
 # For Lodash, ignore all updates
     ignore:
-      - dependency-name: "lodash"      
+      - dependency-name: "lodash"
 # For disabling version updates for npm dependencies
 ##  open-pull-requests-limit: 0
 # Raise all npm pull requests with custom labels
@@ -40,19 +40,19 @@ updates:
       - "npm dependencies"
       - "triage-board"
 
- # Keep Maven dependencies up to date
+# # Keep Maven dependencies up to date
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
       interval: "daily" #(weekly/monthly/Daily)
     open-pull-requests-limit: 10
     commit-message:
-      prefix: "npm"
+      prefix: "maven-dependencies"
 # Raise pull requests for Maven version updates
 # against the "develop" branch. The Docker configuration
 # no longer affects security update pull requests.
     target-branch: "master"
 #  Use custom labels on pull requests for Docker version updates
-     labels:
+    labels:
      - "Maven dependencies"
-      - "triage-board"
+     - "triage-board"
