@@ -23,7 +23,7 @@ updates:
     open-pull-requests-limit: 10
     commit-message:
 # Prefix all commit messages with "npm"
-      prefix: "npm"
+      prefix: "npmDep"
 # Use `allow` to specify which dependencies to maintain
 # Allow updates for Lodash
 # - dependency-name: "lodash"
@@ -47,7 +47,7 @@ updates:
       interval: "daily" #(weekly/monthly/Daily)
     open-pull-requests-limit: 10
     commit-message:
-      prefix: "maven-dependencies"
+      prefix: "mavenDep"
 # Raise pull requests for Maven version updates
 # against the "develop" branch. The Docker configuration
 # no longer affects security update pull requests.
