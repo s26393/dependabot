@@ -54,7 +54,7 @@
         <bnd.version>5.1.2</bnd.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spa.project.core.version>1.3.10</spa.project.core.version>
+        <spa.project.core.version>1.3.14</spa.project.core.version>
         <componentGroupName>Dependabot POC</componentGroupName>
     </properties>
 
