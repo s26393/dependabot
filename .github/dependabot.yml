@@ -14,7 +14,7 @@ version: 2
 updates:
 # Keep npm dependencies up to date
   - package-ecosystem: "npm"
-    directory: "/ui.frontend/package.json"
+    directory: "/ui.frontend"
     schedule:
       interval: "daily"
 # customized schedule for version updates
